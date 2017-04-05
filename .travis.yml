@@ -6,7 +6,7 @@ julia: nightly
 notifications:
   email: false
 env:
-  - JULIA_NUM_THREADS=2
+  - JULIA_NUM_THREADS=2 PMI_MMAP_SYNC_WAIT_TIME=300
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y mpich libmpich-dev
