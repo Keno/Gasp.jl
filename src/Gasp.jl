@@ -28,7 +28,7 @@ function __init__()
     end
 end
 
-__init__()
+#__init__()
 
 function __shutdown__()
     ccall((:gasp_shutdown, libgasp), Void, (Ptr{Void},), ghandle[1])
